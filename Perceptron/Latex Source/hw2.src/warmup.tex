@@ -1,0 +1,36 @@
+\section{Warm up: Feature expansion}
+
+[10 points] Consider the concept class $C$ consisting of functions
+function $f_r$ defined by a radius $r$ as follows:
+
+\begin{equation}
+f_r(x_1, x_2) = \left\{
+    \begin{array}{rl}
+      +1 & 4x_1^4 + 16x_2^4 \leq r;\\
+      -1 & \mbox{otherwise}
+    \end{array}
+\right.
+\label{eq:f_r}
+\end{equation}
+
+Clearly the hypothesis class is {\em not} linearly separable in
+$\Re^2$. 
+
+Construct a function $\phi(x_1, x_2)$ that maps examples to a new
+space, such that the positive and negative examples are linearly
+separable in that space. The answer to this question should consist of
+two parts: (1) a function $\phi$ that maps the instances to the new
+space, and (2) a proof that in the new space, the positive and
+negative points are linearly separated. You can show this by producing
+such a hyperplane in the new space (i.e. find a weight vector $\bw$
+and a bias $b$ such that $\bw^T\phi(x_1, x_2) \geq b$ if, and only if,
+$f_r(x_1, x_2) = +1$.
+
+Hint: The feature transformation $\phi$ should not depend on $r$.
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "hw"
+%%% End:
